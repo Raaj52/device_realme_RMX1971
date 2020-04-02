@@ -12,3 +12,8 @@ allow vendor_init bluetooth_prop:property_service set;
 allow vendor_init qcom_ims_prop:property_service set;
 allow vendor_init radio_prop:property_service set;
 allow vendor_init vendor_camera_prop:property_service set;
+allow vendor_init block_device:lnk_file { setattr };
+
+# Allow vendor_init to set persist_camera_prop
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, persist_camera_prop)
