@@ -581,4 +581,7 @@
     <string name="config_device_parts_package_name" translatable="false">com.kharame.kharameparts</string>
     <string name="config_device_parts_package_activity" translatable="false">com.kharame.kharameparts.KharaMePartsActivity</string>
 
+    <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
+
 </resources>
