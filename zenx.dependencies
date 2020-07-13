@@ -1,0 +1,8 @@
+[
+  {
+    "remote":"pixel-devices-bitbucket",
+    "branch":"ten",
+    "repository": "vendor_realme_RMX1971",
+    "target_path": "vendor/realme/RMX1971"
+  }
+]
