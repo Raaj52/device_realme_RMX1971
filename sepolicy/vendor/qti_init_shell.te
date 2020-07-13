@@ -1,3 +1,6 @@
 allow qti_init_shell persist_file:lnk_file { read };
 allow qti_init_shell oppo_debug_prop:file { read };
 allow qti_init_shell configfs:dir { write };
+dontaudit qti_init_shell self:capability dac_override;
+
+get_prop(qti_init_shell, default_prop);
