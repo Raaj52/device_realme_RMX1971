@@ -600,4 +600,7 @@
     <!-- Whether device has vooc charging support -->
     <bool name="config_hasVoocCharger">true</bool>
 
+    <!-- Whether Device support LiveDisplay or not -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
 </resources>
