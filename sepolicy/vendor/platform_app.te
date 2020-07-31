@@ -1,2 +1,11 @@
 allow platform_app vendor_default_prop:file { read open getattr };
 allow platform_app sysfs_kgsl:dir { search };
+allow platform_app sysfs_battery_supply:dir search;
+allow platform_app sysfs_battery_supply:file rw_file_perms;
+allow platform_app sysfs_device_info:lnk_file { read };
+allow platform_app sysfs_kgsl:file { read };
+allow platform_app sysfs_kgsl:file { open };
+allow platform_app sysfs_kgsl:file { getattr };
+allow platform_app sysfs_graphics:file { read };
+allow platform_app sysfs_graphics:file { open };
+allow platform_app sysfs_graphics:file { getattr };

@@ -1,0 +1,5 @@
+allow untrusted_app apexd_prop:file { open };
+allow untrusted_app apexd_prop:file { getattr };
+allow untrusted_app apexd_prop:file { map };
+allow untrusted_app bluetooth_a2dp_offload_prop:file { open };
+allow untrusted_app bluetooth_a2dp_offload_prop:file { getattr };
