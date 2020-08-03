@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2020 ZenX-OS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,9 +24,6 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 TARGET_USES_64_BIT_BINDER := true
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1971,RMX1971CN
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
