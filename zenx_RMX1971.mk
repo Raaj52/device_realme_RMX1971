@@ -22,6 +22,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
 
+#Official-ify
+ZENX_BUILD_TYPE := Official
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1971
 PRODUCT_NAME := zenx_RMX1971
