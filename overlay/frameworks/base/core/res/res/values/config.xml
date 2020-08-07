@@ -596,5 +596,8 @@
     <string name="config_gpu_clock_path" translatable="false">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_gpu_busy_path" translatable="false">/sys/kernel/gpu/gpu_busy</string>
     <string name="config_battery_level_path" translatable="false">/sys/class/power_supply/battery/capacity</string>
+	
+    <!-- Whether device has vooc charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
 
 </resources>
