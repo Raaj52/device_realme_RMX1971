@@ -6,3 +6,9 @@ allow system_app system_data_file:dir { read };
 
 get_prop(system_app, vendor_camera_prop);
 get_prop(system_app, vendor_default_prop);
+
+# Battery Health
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { read };
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
