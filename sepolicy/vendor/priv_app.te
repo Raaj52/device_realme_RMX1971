@@ -1,7 +1,5 @@
 allow priv_app adsprpc_prop:file open;
-allow priv_app bt_firmware_file:filesystem getattr;
 allow priv_app device:dir open;
-allow priv_app firmware_file:filesystem getattr;
 allow priv_app proc_interrupts:file open;
 allow priv_app proc_modules:file open;
 allow priv_app sysfs_android_usb:file open;
@@ -11,3 +9,6 @@ allow priv_app proc:file open;
 allow priv_app vendor_file:file { execute read };
 
 get_prop(priv_app, vendor_camera_prop);
+
+allow priv_app bt_firmware_file:filesystem { getattr };
+allow priv_app firmware_file:filesystem { getattr };
