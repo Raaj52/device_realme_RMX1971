@@ -1,2 +1,7 @@
 allow init vendor_file:file { execute execute_no_trans };
 allow init socket_device:sock_file { create };
+allow init default_android_hwservice:hwservice_manager add;
+allow init hal_display_color_default:binder call;
+allow init hal_display_postproc_hwservice:hwservice_manager find;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder transfer;

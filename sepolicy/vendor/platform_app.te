@@ -9,3 +9,4 @@ allow platform_app sysfs_kgsl:file { getattr };
 allow platform_app sysfs_graphics:file { read };
 allow platform_app sysfs_graphics:file { open };
 allow platform_app sysfs_graphics:file { getattr };
+allow platform_app vendor_file:file { execute read };

@@ -1,1 +1,2 @@
 allow kernel kernel:socket { create };
+allow kernel self:capability dac_override;
