@@ -193,8 +193,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.wlan.qcom.rc \
     init.wlan.target.rc \
-    ueventd.rc \
-    init.safailnet.rc
+    ueventd.rc
 
 # Display
 PRODUCT_PACKAGES += \
