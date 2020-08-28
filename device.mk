@@ -177,7 +177,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.can.sh \
-    init.qti.fm.sh \
     init.qti.ims.sh \
     init.qti.manifest_sku.sh \
     init.qti.chg_policy.sh \
@@ -234,7 +233,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    qcom.fmradio.xml
 
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
