@@ -8,15 +8,17 @@
     <carrier_config operator="JIO">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
         <boolean name="oppo_support_video_cf_bool" value="true" />
-        <boolean name="config_oppo_support_viwifi_bool" value="false" />
+        <boolean name="config_oppo_support_viwifi_bool" value="true" />
         <boolean name="config_oppo_sms_ims_support_bool" value="false" />
         <boolean name="config_oppo_hide_3g_2g" value="true" />
         <boolean name="config_oppo_lte_preferred_for_second_slot" value="true" />
         <boolean name="config_oppo_dual_lte_available_bool" value="true" />
         <boolean name="carrier_name_override_bool" value="false" />
+        <boolean name="config_oppo_ignore_nondds_23g_vowifi_disable" value="true" />
         <string-array name="mccmnc" num="22">
             <item value="405840" />
             <item value="405854" />
@@ -47,7 +49,6 @@
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="default_enhanced_4g_mode_enabled_bool" value="false" />
         <int name="oppo.operator.ringtone" value="1" />
-        <boolean name="oppo_ussd_over_ims" value="true" />
         <boolean name="config_disable_clir_over_ut" value="true" />
         <string-array name="mccmnc" num="28">
             <item value="40404" />
@@ -83,8 +84,11 @@
     <carrier_config operator="AIRTEL">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="config_oppo_support_viwifi_bool" value="true" />
         <int name="oppo.operator.ringtone" value="1" />
         <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="config_oppo_ignore_nondds_23g_vowifi_disable" value="true" />
         <string-array name="mccmnc" num="23">
             <item value="40402" />
             <item value="40403" />
@@ -111,9 +115,44 @@
             <item value="40556" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="BSNL">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_allow_ussd_in_volte_call" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="config_oppo_sms_ims_support_bool" value="true" />
+        <boolean name="config_oppo_show_video_call_forward" value="true" />
+        <boolean name="oppo_support_video_cf_bool" value="true" />
+        <boolean name="oppo_ussd_over_ims" value="true" />
+        <string-array name="mccmnc" num="22">
+            <item value="40434" />
+            <item value="40438" />
+            <item value="40451" />
+            <item value="40453" />
+            <item value="40454" />
+            <item value="40455" />
+            <item value="40457" />
+            <item value="40458" />
+            <item value="40459" />
+            <item value="40462" />
+            <item value="40464" />
+            <item value="40466" />
+            <item value="40471" />
+            <item value="40472" />
+            <item value="40473" />
+            <item value="40474" />
+            <item value="40475" />
+            <item value="40476" />
+            <item value="40477" />
+            <item value="40479" />
+            <item value="40480" />
+            <item value="40481" />
+        </string-array>
+    </carrier_config>
     <carrier_config operator="VDF">
         <boolean name="carrier_volte_available_bool" value="true" />
         <int name="oppo.operator.ringtone" value="1" />
+        <boolean name="config_oppo_end_cs_call_when_ecc_bool" value="true" />
         <string-array name="mccmnc" num="23">
             <item value="40401" />
             <item value="40405" />
@@ -175,7 +214,7 @@
             <item value="52018" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="TRUE">
+    <carrier_config operator="true">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -188,6 +227,13 @@
     </carrier_config>
     <carrier_config operator="DIGI">
         <boolean name="carrier_volte_available_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="50216" />
+            <item value="50210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config imsi="502161081" operator="DIGI">
+        <boolean name="carrier_volte_available_bool" value="false" />
         <string-array name="mccmnc" num="2">
             <item value="50216" />
             <item value="50210" />
@@ -213,7 +259,6 @@
     </carrier_config>
     <carrier_config operator="SMART">
         <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_noallow_ussd_in_volte_call" value="true" />
         <string-array name="mccmnc" num="2">
             <item value="45605" />
             <item value="45606" />
@@ -221,8 +266,9 @@
     </carrier_config>
     <carrier_config operator="SEATEL">
         <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="config_oppo_force_hangup_bool" value="true" />
         <boolean name="config_oppo_hide_3g_2g" value="true" />
-        <boolean name="carrier_noallow_ussd_in_volte_call" value="true" />
+        <boolean name="config_oppo_dual_lte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="45611" />
         </string-array>
@@ -259,6 +305,7 @@
         <boolean name="config_oppo_lte_preferred_for_second_slot" value="true" />
         <boolean name="config_oppo_dual_lte_available_bool" value="true" />
         <boolean name="config_oppo_hide_cancel_all_callbarring" value="true" />
+        <int name="oppo.operator.ringtone" value="2" />
         <string-array name="mccmnc" num="1">
             <item value="46697" />
         </string-array>
@@ -294,6 +341,17 @@
         <boolean name="config_oppo_hide_cancel_all_callbarring" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="52501" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0A" operator="APTG Roaming">
+        <string-array name="gsm_nonroaming_networks_string_array" num="1">
+            <item value="46697" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="config_oppo_sms_ims_support_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="52505" />
         </string-array>
     </carrier_config>
     <carrier_config operator="STARHUB">
@@ -353,7 +411,7 @@
             <item value="50502" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="OPTUS" imsi="505029">
+    <carrier_config imsi="505029" operator="OPTUS">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
@@ -376,7 +434,7 @@
             <item value="50506" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="VDF" gid1="01f">
+    <carrier_config gid1="01f" operator="VDF">
         <boolean name="carrier_volte_available_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
@@ -402,23 +460,6 @@
         <boolean name="config_disable_clir_over_ut" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="42402" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="Zain KSA">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="config_oppo_sms_ims_support_bool" value="true" />
-        <boolean name="config_disable_clir_over_ut" value="true" />
-        <string-array name="mccmnc" num="1">
-            <item value="42004" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="STC_SA">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="config_disable_clir_over_ut" value="true" />
-        <string-array name="mccmnc" num="1">
-            <item value="42001" />
         </string-array>
     </carrier_config>
     <carrier_config operator="ETISALAT">
@@ -511,38 +552,7 @@
     <carrier_config operator="TEST SIM">
         <boolean name="carrier_volte_available_bool" value="true" />
         <string-array name="mccmnc" num="1">
-            <item value="00101" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="CMCC">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-        <string-array name="mccmnc" num="5">
-            <item value="46000" />
-            <item value="46002" />
-            <item value="46004" />
-            <item value="46007" />
-            <item value="46008" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="CU">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-        <boolean name="config_disable_clir_over_ut" value="true" />
-        <string-array name="mccmnc" num="3">
-            <item value="46001" />
-            <item value="46006" />
-            <item value="46009" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="CT">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-        <boolean name="config_disable_clir_over_ut" value="true" />
-        <int name="volte_replacement_rat_int" value="0" />
-        <string-array name="mccmnc" num="2">
-            <item value="46003" />
-            <item value="46011" />
+            <item value="101" />
         </string-array>
     </carrier_config>
     <carrier_config operator="CMHK">
@@ -576,7 +586,7 @@
             <item value="45406" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="CT" iccid="8986">
+    <carrier_config iccid="8986" operator="CT">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
         <boolean name="config_oppo_sms_ims_support_bool" value="false" />
@@ -584,15 +594,73 @@
             <item value="20404" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="O2-CZ">
+    <carrier_config operator="CMCC">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
+        <string-array name="mccmnc" num="5">
+            <item value="46000" />
+            <item value="46002" />
+            <item value="46004" />
+            <item value="46007" />
+            <item value="46008" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="CU">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
+        <string-array name="mccmnc" num="3">
+            <item value="46001" />
+            <item value="46006" />
+            <item value="46009" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="CT">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
+        <int name="volte_replacement_rat_int" value="0" />
+        <string-array name="mccmnc" num="2">
+            <item value="46003" />
+            <item value="46011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="Zain KSA">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="config_oppo_ut_support_bool" value="true" />
         <boolean name="config_oppo_sms_ims_support_bool" value="true" />
-        <boolean name="config_oppo_support_viwifi_bool" value="false" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
         <string-array name="mccmnc" num="1">
-            <item value="23002" />
+            <item value="42004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="STC_SA">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="config_disable_clir_over_ut" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="AMX-TELCEL">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="config_oppo_sms_ims_support_bool" value="true" />
+        <boolean name="config_oppo_support_viwifi_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="config_oppo_disable_clir_hide_number" value="true" />
+        <int name="oppo_use_telcel_busy_tone" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="334020" />
+        </string-array>
+    </carrier_config>
+    <carrier_config operator="ATT Mexico">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string-array name="mccmnc" num="4">
+            <item value="33405" />
+            <item value="33409" />
+            <item value="334050" />
+            <item value="334080" />
         </string-array>
     </carrier_config>
 </carrier_config_list>
