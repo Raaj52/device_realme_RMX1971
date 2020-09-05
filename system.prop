@@ -82,6 +82,7 @@ ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.radio.aosp_usr_pref_sel=true
 persist.radio.VT_ENABLE=1 
 persist.radio.volte.dan_support=true 
 persist.data.iwlan=1 
@@ -90,6 +91,7 @@ persist.sys.cust.lte_config=true
 service.qti.ims.enabled=1 
 persist.vendor.qti.telephony.vt_cam_interface=2
 ro.telephony.iwlan_operation_mode=legacy
+persist.radio.aosp_usr_pref_sel=true
 
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
