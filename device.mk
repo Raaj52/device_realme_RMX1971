@@ -336,6 +336,10 @@ PRODUCT_PACKAGES += \
     libstagefright_omx.vendor \
     android.hardware.media.omx@1.0-service
 
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
