@@ -21,7 +21,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
 IS_PHONE := true
 
 #Official-ify
