@@ -362,6 +362,10 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+# OTA
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
