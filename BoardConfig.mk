@@ -173,7 +173,7 @@ VENDOR_SECURITY_PATCH := 2020-02-05
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
